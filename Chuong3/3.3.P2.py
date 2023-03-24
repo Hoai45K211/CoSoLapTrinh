@@ -1,8 +1,8 @@
-i=1 
-while i<10:
-    n=1 
-    while n<=9:
-        print("%4d"%(i*n),end=" ") 
-        n+=1
-    print("")
-    i+=1
+i=1                             #viettruoc
+while i<=9:                     #viettruoc
+    j=1 
+    while j<=9:
+        print(i*j,end=" ")      #print("{:>3}".format(i*j),end=" ")
+        j=j+1
+    print("")                   #xuong dong
+    i+=1                        #i=i+1 --- viettruoc
