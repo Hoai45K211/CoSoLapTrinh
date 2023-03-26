@@ -1,21 +1,22 @@
 while True:
-    a = float(input("a="))
-    b = float((input("b=")))
-    toantu = input("Toan tu:")
-    
-    if toantu == "+":
-        ketqua = a + b
-    elif toantu == "-":
-        ketqua = a - b
-    elif toantu == "*":
-        ketqua = a * b
-    elif toantu == "/":
-        ketqua = (a / b)
+    a=float(input("a="))
+    b=float(input("b="))
+    tt=input("Toan tu:")
+   
+    if tt=="+":
+        kq=a+b
+    elif tt=="-":
+        kq=a-b
+    elif tt=="*":
+        kq=a*b
     else:
-        print("Toán tử không hợp lệ!")
-        continue
-    print(f"{a}{toantu}{b}={ketqua}")
-    
-    tieptuc = input("Tiep tuc:")
-    if tieptuc.lower() == "t":
+        kq=a/b
+
+    if (tt=="/") and b==0:
+        print("Khong thuc hien duoc!!!")
+    else:
+        print(a,tt,b,"=",kq,sep="")
+
+    lap=input("Tiep tuc: ")
+    if lap=="T" or lap=="t":
         break

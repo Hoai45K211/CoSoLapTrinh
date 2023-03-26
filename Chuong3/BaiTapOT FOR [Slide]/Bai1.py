@@ -1,5 +1,5 @@
 n=int(input("n="))
-giaithua=1
+s=1
 for i in range(1,n+1):
-        giaithua=giaithua*i
-print(n,"!=",giaithua,sep="")
+        s=s*i
+print(n,"!=",s,sep="")
