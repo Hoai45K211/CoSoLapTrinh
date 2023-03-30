@@ -1,5 +1,5 @@
 while True:
-    n=int(input("n="))
+    n=int(input(""))
     t=1
     i=1
     while i<=n:
@@ -7,4 +7,4 @@ while True:
         i=i+1
     if n<0:
         break
-    print("n!=",t,sep="")
+    print("t")
