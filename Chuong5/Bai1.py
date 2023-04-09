@@ -1,7 +1,10 @@
-def add(L, x, k):
-    n = len(L)  # Số phần tử của List L
-    if k > n:
-        L.append(x)  # Thêm x vào cuối List L nếu k lớn hơn n
+def add(L,x,k):
+    if k<=len(L):
+         L=L[:k]+[x]+L[k:]
     else:
-        L.insert(k, x)  # Thêm x vào vị trí k trong List L
-    return L
+         L=L+[x]
+    print(L)
+L=[1,2,3,4,5,6,7]
+k=int(input('k='))
+x=int(input('x='))
+add(L,x,k)

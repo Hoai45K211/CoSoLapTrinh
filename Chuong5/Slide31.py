@@ -7,7 +7,6 @@ def Nhap():
     x=int(input("Nhap so nguyen x="))
     return L,x
 
-
 def InKQ(L):
     for x in L:
         print(x,end=", ")
