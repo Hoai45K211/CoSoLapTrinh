@@ -1,10 +1,19 @@
+def Nhap():
+    x=int(input("x="))
+    k=int(input("k="))
+    n=int(input("n="))
+    L=[]
+    for i in range(n):
+        z=int(input())
+        L=L + [z]
+    return x,k,L
+
+
 def add(L,x,k):
-    if k<=len(L):
-         L=L[:k]+[x]+L[k:]
-    else:
-         L=L+[x]
-    print(L)
-L=[1,2,3,4,5,6,7]
-k=int(input('k='))
-x=int(input('x='))
-add(L,x,k)
+    L=L[:k] + [x] + L[k:]
+    return L
+
+
+x,k,L=Nhap()
+L=add(L,x,k)
+print(L)

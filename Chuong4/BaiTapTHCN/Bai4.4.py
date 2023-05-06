@@ -5,7 +5,7 @@ def nhap():
     c = int(input("c="))
     return a,b,c
 
-def max3(a,b,c):
+def max(a,b,c):
     max=b
     if max<a:
         max=a

@@ -1,10 +1,19 @@
+def Nhap():
+    x=int(input("x="))
+    k=int(input("k="))
+    n=int(input("n="))
+    L=[]
+    for i in range(n):
+        z=int(input())
+        L=L + [z]
+    return x,k,L
+
 def search(L,x):
-    a=[]
-    for i in range(len(L)):
+    for i in range (len(L)):
         if L[i]==x:
-            a=a+[i]
-    if a!=[]:
-        print(a)
-    else:
-        print('None')
-search(L,x)
+            return i
+    return None 
+        
+x,k,L=Nhap()
+pos=search(L,x)
+print("Ket qua tim kiem:",pos)
