@@ -1,3 +1,17 @@
+#Cho đoạn văn bản như sau:
+#“--Người---đâu-gặp---gỡ-làm-chi---
+#Trăm----năm-biết-có---duyên---gì--hay--không.
+#Ngổn-ngang---trăm-mối---bên---lòng----
+#----Nên-câu---tuyệt--diệu-ngụ-trong-tính-tình.”
+
+#Yêu cầu tiền xử lý để thành đoạn văn bản có ý nghĩa.
+#“Người đâu gặp gỡ làm chi
+#Trăm năm biết có duyên gì hay không.
+#Ngổn ngang trăm mối bên lòng
+#Nên câu tuyệt diệu ngụ trong tính tình.”
+
+
+
 st='''--Người---đâu-gặp---gỡ-làm-chi---
 Trăm----năm-biết-có---duyên---gì--hay--không.
 Ngổn-ngang---trăm-mối---bên---lòng----
@@ -15,6 +29,5 @@ def TienXuLy(st):
     L=st.split("\n")    # Tách mỗi dòng thành 1 phần tử của List L
     for dong in L:
         print(XuLyDong(dong))   #Xử lý từng dòng
-
 
 TienXuLy(st)

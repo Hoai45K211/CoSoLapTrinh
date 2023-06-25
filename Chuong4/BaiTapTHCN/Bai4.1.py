@@ -1,3 +1,12 @@
+#Viết chương trình thực hiện tính n!
+#Biết rằng: n! = n*(n-1)!
+#Và: 0! = 1
+#Yêu cầu xây dựng các hàm sau:
+#- Hàm nhap(), thực hiện việc nhập một số nguyên dương n từ bàn phím.
+#- Hàm giaithua(n), tính và trả về kết quả của phép tính n!
+#- Hàm inkq(n,X), thực hiện in lên màn hình kết quả của n!
+
+
 def nhap():                 #gọi hàm nhap
     n=int(input("n="))      #nhập giá trị n 
     return n                #giá trị n được trả về từ hàm nhap

@@ -1,3 +1,8 @@
+#chương trình này yêu cầu người dùng nhập một số nguyên n, 
+# sau đó yêu cầu người dùng nhập n số nguyên 
+# và đếm số lượng số chẵn khác 0. 
+# Cuối cùng, kết quả được in ra màn hình.
+
 def Nhap():
     n=int(input("n="))
     return n

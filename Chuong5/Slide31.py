@@ -1,3 +1,14 @@
+#Viết chương trình nhập từ bàn phím 10 số nguyên, 
+# lưu trữ vào 1 List; và nhập một số nguyên x. 
+# Yêu cầu sử dụng hàm.
+
+#a. Tìm tất cả các phần tử có giá trị bằng 5 và thay bằng x.
+# In kết quả lên màn hình;
+
+# b. Xóa tất cả các phần tử có giá trị bằng x xuất hiện 
+# trong tập hợp trên. In kết quả lên màn hình.
+
+
 def Nhap():
     L=[]
     print("Moi nhap 10 so nguyen:")

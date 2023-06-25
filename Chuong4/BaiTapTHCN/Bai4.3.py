@@ -1,3 +1,11 @@
+#Viết chương trình giải và biện luận phương trình bậc hai: ax2 + bx + c = 0. 
+#Trong đó a,b và c (a,c,b <> 0) được nhập vào từ bàn phím.
+#Yêu cầu xây dựng các hàm sau:
+#- Hàm nhap(),thực hiện việc nhập vào 3 số a,b và c;
+#- Hàm giaipt(a,b,c),thực hiện giải và biện luận phương trình bậc hai với các tham số a, b, c
+#đầu vào.
+#- Hàm inkq(x1,x2): in kết quả là nghiệm của phương trình được in lên màn hình.
+
 import math
 def nhap():
     print("Nhap 3 so nguyen:")

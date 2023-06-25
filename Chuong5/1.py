@@ -6,4 +6,3 @@ x=int(input("x="))
 while x in L:
     L.remove(x)
 print(L)
-

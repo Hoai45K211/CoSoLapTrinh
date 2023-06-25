@@ -1,3 +1,7 @@
+#Nhập từ bàn phím số nguyên n (n>=1), thực hiện các yêu cầu sau:
+#a. In lên màn hình dãy số từ 1 đến n, 
+# với điều kiện mỗi số nằm trên một dòng văn bản
+
 n=int(input("n="))
 i=1
 while n>=1 and i<=n:

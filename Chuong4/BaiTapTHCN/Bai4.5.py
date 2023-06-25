@@ -1,3 +1,14 @@
+#Viết chương trình đếm số nguyên tố:
+#Yêu cầu xây dựng các hàm sau:
+#- Hàm LaSoNguyenTo(x): trả về True nếu x là số nguyên tố, còn lại trả về False;
+#- Hàm SoHopLe(x): trả về True nếu x<=1, còn lại trả về False;
+#- Hàm NhapVaDem(): thực hiện nhập liên tục các số nguyên cho đến khi số được nhập vào là
+#số <=1 thì dừng. Sử dụng hàm SoHopLe(x) ở trên để kiểm tra một số x có <=1 hay không. Sử
+#dụng hàm LaSoNguyenTo(x) ở trên để kiểm tra và đếm có bao nhiêu số nguyên đã được
+#nhập là số nguyên tố. Kết quả được trả về qua tên hàm.
+#- Hàm InKQ(kq): in lên màn hình kết quả theo mẫu sau.
+
+
 def LaSoNguyenTo(x):
     for i in range(2,x):
         if x%i==0:

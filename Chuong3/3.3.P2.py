@@ -1,3 +1,5 @@
+#In lên màn hình bảng cửu chương 9x9
+
 i=1                             #viettruoc
 while i<=9:                     #viettruoc
     j=1 

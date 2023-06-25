@@ -1,3 +1,6 @@
+#Viết chương trình nhập từ bàn phím một số nguyên dương n(0<=n<=9999). 
+# Cho biết n có bao nhiêu chữ số. (yêu cầu sử dụng cấu trúc lặp)
+
 n=int(input("n="))
 dem=0
 for i in str(n):

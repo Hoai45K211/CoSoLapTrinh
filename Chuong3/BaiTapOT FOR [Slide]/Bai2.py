@@ -1,3 +1,7 @@
+#Viết chương trình nhập từ bàn phím một số nguyên n (2<= n<=100). 
+# Cho biết n có phải là số nguyên tố hay không. 
+# Biết rằng, n là số nguyên tố nếu n chỉ chia hết cho 1 và chính nó
+
 n=int(input("n="))
 if n>=2 and n<=100:
     for i in range(2,n):

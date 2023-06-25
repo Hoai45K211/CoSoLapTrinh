@@ -1,6 +1,8 @@
-#yêu cầu người dùng nhập các số nguyên từ bàn phím 
-# cho đến khi người dùng nhập số 0. 
-# Sau đó, chương trình đếm và in ra số lượng số dương và số lượng số âm đã được nhập.
+#Nhập vào một dãy các số nguyên tùy ý, 
+# cho đến khi bấm số 0 thì kết thúc nhập. 
+# Cho biết có bao nhiêu số âm và bao nhiêu số dương 
+# đã được nhập vào trong dãy số trên
+
 
 soam=0      #biến đếm
 soduong=0   #biến đếm

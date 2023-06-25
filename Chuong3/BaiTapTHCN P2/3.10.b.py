@@ -1,3 +1,7 @@
+#In lên màn hình dãy số từ 1 đến n, 
+# với điều kiện mỗi dòng có tối đa 5 chữ số 
+# (mỗi số nhau 1 dấu cách).
+
 n=int(input("n="))
 i=1
 while n>=1 and i<=n:
