@@ -1,1 +1,3 @@
-'Hello world'[0:5]
+print('Hello'.upper())
+print('Hello'.upper().isupper())
+print('Hello'.upper().lower())

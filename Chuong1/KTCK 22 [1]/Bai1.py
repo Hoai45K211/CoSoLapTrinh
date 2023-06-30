@@ -1,55 +1,48 @@
-#Đoạn code yêu cầu người dùng nhập vào một số nguyên n.
-#Sau đó, nó yêu cầu người dùng nhập vào n giá trị.
-#Chương trình đếm và tính tổng các giá trị số đã được nhập vào.
-#Nếu không có giá trị số nào được nhập, in ra màn hình chuỗi "0".
-#Nếu có giá trị số được nhập, tính trung bình của các giá trị số 
-# và in ra màn hình với định dạng làm tròn đến 2 chữ số thập phân.
+#Đoạn code yêu cầu người dùng nhập vào một dãy số nguyên, 
+# các số cách nhau bằng khoảng trắng.
+
+# Sau khi nhập dãy số, nó sẽ chuyển đổi chuỗi đó thành 
+# một danh sách các số nguyên bằng cách sử dụng hàm map() và split().
+
+# Tiếp theo, danh sách các số nguyên được chuyển thành 
+# một danh sách mới n2 chỉ chứa các phần tử duy nhất 
+# từ danh sách ban đầu. Các phần tử trùng lặp trong danh sách n1 được loại bỏ.
+
+# Kết quả của danh sách n2 được in ra màn hình.
+
+#Tóm lại, đoạn code này nhận dữ liệu đầu vào từ 
+# người dùng dưới dạng dãy số nguyên, loại bỏ 
+# các phần tử trùng lặp và in ra các số duy nhất trong dãy đó.
+
 #Ví dụ:
-#Nếu người dùng nhập số n = 4 và nhập các giá trị 
-# 5, 8, "hello", 10, kết quả sẽ là 7.67.
+# Nếu người dùng nhập chuỗi "1 2 3 2 4 5 3", 
+# đầu ra sẽ là [1, 2, 3, 4, 5].
 
-n=int(input())
-sum=0
-count= 0
-for i in range (1,n+1):
-    value = input()
-    if value.isdigit():
-        count+=1
-if count ==0:
-    print('0')
-else:
-    total = sum/count
-    print(round(total,2))
-    
 
-#n=int(input()): 
-# Lấy đầu vào từ người dùng thông qua 
-# hàm input() và chuyển đổi nó thành một số nguyên 
-# bằng cách sử dụng hàm int(). Kết quả được gán cho biến n.
+n1=list(map(int,input().split()))
+n2=list(dict.fromkeys(n1))
+print(n2)
 
-#sum=0 và count=0: 
-# Khởi tạo biến sum với giá trị ban đầu 
-# là 0 và biến count đếm số lượng giá trị số được nhập vào.
 
-#for i in range(1,n+1):: 
-# Bắt đầu vòng lặp for từ 1 đến n 
-# (bao gồm n).
-# value = input(): 
-# Lấy đầu vào từ người dùng thông qua hàm input() và gán cho biến value.
-# if value.isdigit():: Kiểm tra xem value có phải là một chuỗi số không.
-# Nếu value là một chuỗi số, tăng biến count lên 1.
+#n1=list(map(int,input().split())): 
+# Đầu tiên, nó sử dụng hàm input() để nhận một chuỗi đầu 
+# vào từ người dùng. Hàm input() trả về một chuỗi chứa các 
+# giá trị được nhập vào từ bàn phím. Sau đó, hàm split() 
+# được gọi để tách chuỗi thành một danh sách các phần tử 
+# dựa trên khoảng trắng (mặc định). Hàm map() được áp dụng 
+# để chuyển đổi mỗi phần tử trong danh sách thành một 
+# số nguyên bằng cách sử dụng hàm int(). Kết quả là một
+# danh sách các số nguyên và được gán cho biến n1.
 
-#if count == 0:: 
-# Kiểm tra xem giá trị của biến count 
-# có bằng 0 không.
-# Nếu count bằng 0, tức là không có giá trị số nào 
-# được nhập vào.
-# In ra màn hình chuỗi "0".
+#n2=list(dict.fromkeys(n1)): 
+# Tiếp theo, danh sách n1 được truyền vào hàm dict.fromkeys()
+# để tạo một từ điển với các khóa là các phần tử trong n1 
+# và giá trị tương ứng là None. Sau đó, danh sách các 
+# khóa từ từ điển này được chuyển đổi thành danh sách n2 
+# bằng cách sử dụng hàm list(). Điều này loại bỏ các 
+# phần tử trùng lặp từ danh sách n1 và giữ lại chỉ mục 
+# đầu tiên của mỗi phần tử duy nhất.
 
-#else::
-# Nếu count khác 0, tức là có ít nhất một giá trị số 
-# được nhập vào.
-# Tính tổng các giá trị số đã nhập vào và gán cho biến total.
-# Tính trung bình bằng cách chia tổng cho count.
-# In giá trị trung bình total làm tròn đến 2 chữ số thập phân
-# và hiển thị ra màn hình.
+#print(n2): Cuối cùng, danh sách n2 được in ra màn hình. 
+# Đây là danh sách các phần tử duy nhất từ danh sách n1, 
+# mà không có các phần tử trùng lặp.

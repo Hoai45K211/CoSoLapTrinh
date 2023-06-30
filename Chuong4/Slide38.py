@@ -1,9 +1,9 @@
 def spam(divideby):
     try:
         result = 42 / divideby
-    except:
+    except: #0 chạy được
         print("Sorry ! You are dividing by zero ")
-    else:
+    else:   #nếu chạy được
         print("Yeah ! Your answer is :",result)
 
 print(spam(1))

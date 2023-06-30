@@ -1,74 +1,54 @@
-#Đoạn code yêu cầu người dùng nhập một chuỗi s.
-#Sau đó, chương trình tìm và trích xuất các chuỗi con 
-# liên tiếp chứa các chữ
+#Đoạn code yêu cầu người dùng nhập vào một chuỗi từ bàn phím.
 
-#Input: "a1b2c3d4"
-# Output: "1234"
-# Giải thích: Chuỗi nhập vào là "a1b2c3d4". 
-# Trong chuỗi này, ta có các chuỗi con liên tiếp chứa 
-# các chữ số là "1", "2", "3", "4". Chương trình sẽ 
-# trích xuất các chuỗi con này và ghép lại thành 
-# chuỗi mật khẩu "1234" và trả về kết quả này.
+#Sau đó, nó tìm các ký tự trong chuỗi đó mà xuất hiện trùng lặp.
 
-def get_password(s):
-    password =''
-    i = 0
-    while i <len(s):
-        if s[i].isdigit():
-            j=i+1
-            while j<len(s) and s[j].isdigit():
-                j+=1
-                password += str(int(s[i:j]))
-                i=j
-        else:
-            i+=1
-            return password
-    s = input()
-print(get_password())
+#Nếu có ký tự xuất hiện trùng lặp, in ra ký tự đầu tiên đó.
 
-#Định nghĩa hàm get_password(s): Hàm này nhận đầu vào là 
-# một chuỗi s và sẽ trả về một chuỗi mật khẩu.
+#Nếu không có ký tự nào xuất hiện trùng lặp, in ra chuỗi "None".
 
-#Khởi tạo biến password với giá trị rỗng để lưu trữ chuỗi
-# mật khẩu.
+#Ví dụ:
+#Nếu người dùng nhập chuỗi "abbccd", kết quả sẽ là "b".
 
-#Khởi tạo biến i với giá trị ban đầu là 0 để duyệt qua các 
-# ký tự trong chuỗi s.
 
-#Bắt đầu vòng lặp while để duyệt qua từng ký tự trong chuỗi s.
+A=[]
+B=[]
+n=input()
+for i in n:
+    if i not in A:
+        A+=[i]
+    else:
+        B+=[i]
+if B!=[]:
+    kq=B[0]
+    print(kq)
+else:
+    print("None")
+    
+    
+#A=[] và B=[]: 
+# Khởi tạo hai danh sách rỗng A và B.
 
-#Trong vòng lặp, kiểm tra nếu ký tự s[i] là một chữ số bằng cách 
-# sử dụng phương thức isdigit().
+#n=input(): 
+# Lấy đầu vào từ người dùng thông qua hàm input() 
+# và gán cho biến n.
 
-#Nếu s[i] là một chữ số, tiến hành tìm chuỗi các chữ số liên 
-# tiếp sau s[i].
+#for i in n:
+# Bắt đầu vòng lặp for để lặp qua từng ký tự i trong chuỗi n.
+# if i not in A:: Kiểm tra xem ký tự i có tồn tại trong 
+# danh sách A không.
+# Nếu ký tự i không tồn tại trong A, thêm ký tự i vào 
+# danh sách A bằng cách sử dụng phép cộng danh sách (A+=[i]).
+# Ngược lại, nếu ký tự i đã tồn tại trong A, thêm ký tự i 
+# vào danh sách B bằng cách sử dụng phép cộng danh sách (B+=[i]).
 
-#Khởi tạo biến j với giá trị i + 1.
+#if B!=[]:
+# Kiểm tra xem danh sách B có rỗng không.
+# Nếu danh sách B không rỗng, tức là đã có ít nhất 
+# một ký tự xuất hiện trùng lặp trong chuỗi n.
+# Gán ký tự đầu tiên trong danh sách B cho biến kq.
+# In biến kq ra màn hình.
 
-#Bắt đầu vòng lặp while để tìm chuỗi các chữ số liên tiếp 
-# sau s[i].
-
-#Trong vòng lặp, kiểm tra nếu j chưa vượt qua độ dài chuỗi s 
-# và ký tự s[j] là một chữ số.
-
-#Nếu điều kiện thỏa mãn, tăng giá trị của j lên 1 để tiếp tục 
-# tìm chuỗi chữ số.
-
-#Sau khi tìm được chuỗi chữ số, chuyển đổi nó thành một số nguyên 
-# bằng cách sử dụng int(s[i:j]), sau đó chuyển đổi số nguyên
-# thành chuỗi và thêm vào biến password.
-
-#Cập nhật giá trị của i thành j để tiếp tục duyệt các ký tự 
-# tiếp theo trong chuỗi s.
-
-#Nếu ký tự s[i] không phải là chữ số, tăng giá trị của i lên 1
-# để chuyển sang ký tự kế tiếp trong chuỗi s.
-
-#Cuối cùng, trả về giá trị của biến password là chuỗi mật khẩu.
-
-#Trong chương trình chính, yêu cầu người dùng nhập một chuỗi s 
-# từ bàn phím.
-
-#Gọi hàm get_password(s) với đối số là chuỗi s vừa nhập và
-# in kết quả ra màn hình.
-
+#else: print("None")
+# Nếu danh sách B rỗng, tức là không có ký tự nào 
+# trong chuỗi n xuất hiện trùng lặp.
+# In chuỗi "None" ra màn hình.

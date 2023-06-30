@@ -1,3 +1,12 @@
+#Sử dụng hàm để thực hiện các yêu cầu sau:
+# Nhập từ bàn phím một số nguyên n;
+# Hàm Nhap()
+# Nhập liên tục từ bàn phím n số nguyên;
+# Đếm và in lên màn hình có bao nhiêu chữ số chẵn 
+# đã được nhập vào.
+# Hàm NhapVaDem(n)
+# Hàm InKQ(kq
+
 #chương trình này yêu cầu người dùng nhập một số nguyên n, 
 # sau đó yêu cầu người dùng nhập n số nguyên 
 # và đếm số lượng số chẵn khác 0. 
